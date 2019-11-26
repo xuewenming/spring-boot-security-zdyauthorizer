@@ -1,0 +1,17 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /security
+    session:
+      timeout: 30m
+spring:
+  application:
+    name: serurity-service
+  profiles:
+    active: dev
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+mybatis:
+  mapper-locations: classpath:/static/*.xml
